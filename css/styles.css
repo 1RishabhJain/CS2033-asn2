@@ -1,0 +1,132 @@
+body {
+    margin-top: 20px;
+    background-image: url("../images/background.png");
+    background-color: lightblue;
+    background-repeat: repeat
+}
+
+.arrow {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+}
+
+section {
+    padding: 0;
+    margin-top: 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 45px;
+    text-align: center;
+    background-color: cornflowerblue;
+    font-family: "Rancho";
+    line-height: 50px;
+    transition: background-color 1s;
+}
+
+li:hover {
+    background-color: deepskyblue;
+}
+
+li.links {
+    background-color: transparent;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Trebuchet MS", sans-serif;
+    list-style-type: none;
+}
+
+ul li a {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+    color: midnightblue;
+    font-family: "Rancho";
+}
+
+h2 {
+    font-size: 30px;
+    text-align: left;
+    color: darkblue;
+    font-family: "Lobster";
+}
+
+p {
+    font-size: 22px;
+    text-align: justify;
+    color: darkblue;
+    font-family: "Montserrat";
+}
+
+.picture {
+    width: 550px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.picture-row {
+    width: 300px;
+    margin: 7px;
+    border-radius: 10px;
+
+}
+
+.image {
+    text-align: center;
+
+}
+
+a:link {
+    color: mediumblue;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:hover {
+    color: midnightblue;
+}
+
+a:active {
+    color: cadetblue;
+}
+
+.flagBox {
+    position: relative;
+    height: 325px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flag {
+    background-image: url('../images/flag.jpg');
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+}
+
+@keyframes animateFlag {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 780px;
+    }
+}
+
+#flagID {
+    animation: animateFlag 5s infinite linear alternate;
+}
